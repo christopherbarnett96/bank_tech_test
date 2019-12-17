@@ -28,10 +28,14 @@ class Account
 
   def add_event(deposit_amount: nil, withdrawal_amount: nil)
     if deposit_amount
-      @statement.activity.unshift("#{Time.now.strftime('%d/%m/%Y')} || #{'%.2f' % deposit_amount} || || #{'%.2f' % @balance}")
+      @statement.activity.unshift("#{Time.now.strftime('%d/%m/%Y')} || #{format(deposit_amount)} || || #{format(@balance)}")
     elsif withdrawal_amount
-      @statement.activity.unshift("#{Time.now.strftime('%d/%m/%Y')} || || #{'%.2f' % withdrawal_amount} || #{'%.2f' % @balance}")
+      @statement.activity.unshift("#{Time.now.strftime('%d/%m/%Y')} || || #{format(withdrawal_amount)} || #{format(@balance)}")
     end
+  end
+
+  def format(value)
+    '%.2f' % value
   end
 
 
