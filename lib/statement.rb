@@ -6,7 +6,6 @@ class Statement
     @activity = []
   end
 
-
   def show
     print "\"date || credit || debit || balance\"\n"
     @activity.each { |event| p event }
