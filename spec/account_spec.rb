@@ -22,4 +22,12 @@ describe Account do
 
   end
 
+  context 'Statement' do
+    
+    it 'prints a header' do
+      header = "\"date || credit || debit || balance\"\n"
+      expect { subject.statement }.to output(header).to_stdout
+    end
+  end
+
 end

@@ -17,4 +17,7 @@ class Account
     @balance -= value
   end
 
+  def statement
+    print "\"date || credit || debit || balance\"\n"
+  end
 end
