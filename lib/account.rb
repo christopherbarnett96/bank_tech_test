@@ -1,3 +1,5 @@
+require_relative 'statement'
+
 class Account
   DEFAULT_MIN_BALANCE = 0.00
 
@@ -5,8 +7,9 @@ class Account
   attr_reader :balance
 
 
-  def initialize
+  def initialize(statement=Statement.new)
     @balance = DEFAULT_MIN_BALANCE
+    @statement = statement
   end
 
   def add(value)
@@ -18,6 +21,8 @@ class Account
   end
 
   def statement
-    print "\"date || credit || debit || balance\"\n"
+    @statement.show
   end
+
+
 end
