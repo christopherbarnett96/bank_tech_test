@@ -1,5 +1,4 @@
 class Statement
-
   attr_accessor :activity
 
   def initialize
