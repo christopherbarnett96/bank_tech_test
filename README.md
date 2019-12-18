@@ -8,6 +8,4 @@
 - require the account file within your chose REPL<br/> `require "./lib/account.rb"`
 
 ### Working product
-
-
-![alt text](https://github.com/topherb99/bank_tech_test/Screenshot1.png)
+![](./public/screenshot1.png)
