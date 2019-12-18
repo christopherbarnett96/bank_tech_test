@@ -1,6 +1,9 @@
 # bank_tech_test
 
+Installation
+------------
+
 - fork and clone this repo
-- navigate into the working directory from the command line:<br/>_$ cd bank_tech_test_
-- open PRY or IRB<br/>_$ pry / $ irb_
-- require the account file within your chose REPL<br/> _require "./lib/account.rb"_
+- navigate into the working directory from the command line:<br/>`$ cd bank_tech_test`
+- open PRY or IRB<br/>`$ pry / $ irb`
+- require the account file within your chose REPL<br/> `require "./lib/account.rb"`
