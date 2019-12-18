@@ -13,13 +13,13 @@ class Account
   def add(value)
     @balance += value
     add_event(deposit_amount: value)
-    return "You have deposited #{format_money(value)}"
+    return "You have deposited #{format(value)}"
   end
 
   def withdraw(value)
     @balance -= value
     add_event(withdrawal_amount: value)
-    return "You have withdrawn #{format_money(value)}"
+    return "You have withdrawn #{format(value)}"
   end
 
   def statement
