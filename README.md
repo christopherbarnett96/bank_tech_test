@@ -10,4 +10,4 @@
 ### Working product
 
 
-![alt text](Screenshot1.png)
+![alt text](https://github.com/topherb99/bank_tech_test/Screenshot1.png)
