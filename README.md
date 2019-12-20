@@ -7,5 +7,5 @@
 - open PRY or IRB<br/>`$ pry / $ irb`
 - require the account file within your chose REPL<br/> `require "./lib/account.rb"`
 
-### Working product
+#### Working product
 ![](./public/screenshot1.png)
